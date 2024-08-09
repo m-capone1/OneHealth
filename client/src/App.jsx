@@ -16,17 +16,12 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/chat" element={<ChatPage />} />
-<<<<<<< HEAD
-        <Route path='/records' element={ <RecordList recordListData={recordData}/>} />
-        <Route path='/record-details/:id' element={ <RecordDetailsPage  />} />
-=======
         <Route path="/tracker" element={<TrackerPage />} />
         <Route
           path="/records"
           element={<RecordList recordListData={recordData} />}
         />
         <Route path="/record-details" element={<RecordDetailsPage />} />
->>>>>>> main
       </Routes>
     </Router>
   );
