@@ -1,6 +1,6 @@
 import './App.scss';
 import RecordDetailsPage from './pages/RecordDetailsPage/RecordDetailsPage';
-import RecordList from './components/RecordList/RecordList';
+import RecordList from "./components/RecordList/RecordList";
 import recordData from "./Data/data.json";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
