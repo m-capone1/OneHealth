@@ -18,7 +18,7 @@ const handleLogin = () => {
       </Link>
       {isloggedIn && 
       <nav className="header__links">
-        <Link to="/records"  className={location.pathname === '/' ? 'active' : ''}>Records</Link>
+        <Link to="/records"  className={location.pathname === '/records' ? 'active' : ''}>Records</Link>
         <Link to="tracker" className={`header__link--tracker ${location.pathname === '/tracker' ? 'active' : ''}`}>Tracker</Link>
         <Link to="/chat" className={location.pathname === '/chat' ? 'active' : ''}>Chat</Link>
       </nav>}
