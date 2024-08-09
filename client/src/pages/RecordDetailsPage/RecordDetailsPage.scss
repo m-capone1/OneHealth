@@ -120,11 +120,14 @@
     &__button {
         height: 3.5rem;
         font-size: 1.5rem;
+        border: none;
         border-radius: 3rem;
-        font-family: 'Roboto-Regular', sans-serif;
+        // font-family: 'Roboto-Regular', sans-serif;
         background-color: $finn;
+        box-shadow: 2px 2px rgba($umber, 0.5);
         color: $white;
         padding: 0 1rem;
+        cursor: pointer;
     }
 }
 
