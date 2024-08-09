@@ -2,10 +2,10 @@
 
 h1{
     margin: 0;
-    font-size: 1.7rem;
 }
 a{
     text-decoration: none;
+    font-size: 1.5rem;
 }
 .header {
   display: flex;
@@ -32,11 +32,11 @@ a{
 &__button{
     background-color:transparent;
     border: none;
-    width: 2.5rem;
+    width: 3.5rem;
     cursor: pointer;
 }
 &__avatar{
-    width: 2rem;
+    width: 3rem;
     border-radius: 25px;
 }
 &__account{
@@ -45,8 +45,8 @@ a{
     gap: 0.5rem;
     border: 1px solid $sand;
     border-radius: 50px;
-    padding: 0.3rem 1rem;
-    width: 5rem;
+    padding: 0.5rem 1rem;
+    width: 9rem;
 }
 }
 
