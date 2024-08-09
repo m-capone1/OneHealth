@@ -1,0 +1,21 @@
+@use "../../styles/partials/variables" as *;
+
+.record{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid $umber;
+    
+    &:last-child{
+        border-bottom: unset;
+    }
+
+    &__col{
+        width: 33.33%;
+        text-align: center;
+        font-size: 2rem;
+        
+        padding: 2rem 0;
+    }
+}

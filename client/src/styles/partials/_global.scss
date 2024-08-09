@@ -4,11 +4,13 @@
 @include font-faces;
 
 // Global styles
-// @mixin global-styles {
-//     font-family: "Roboto";
-//     margin: 0;
-//     padding: 0;
-//     width: 100%;
+@mixin global-styles {
+    body{
+        font-family: "Roboto-Regular";
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 
 //     *,
 //     *::before,
