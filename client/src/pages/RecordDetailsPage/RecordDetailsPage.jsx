@@ -7,7 +7,7 @@ import stars from '../../assets/icons/stars.png';
 
 export default function RecordDetailsPage() {
     const [showDetails, setShowDetails] = useState(false);
-    const [content, setContent]= useState({});
+    const [content, setContent]= useState("");
     const [isCotnent, setIsContent] = useState(false);
 
     const openAIUrl = "http://localhost:8080/generate-content";
