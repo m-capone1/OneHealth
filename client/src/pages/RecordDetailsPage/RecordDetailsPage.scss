@@ -1,19 +1,17 @@
 @use '../../styles/partials/variables' as *;
 
 .details {
-    display: flex;
-    height: 50rem;
+    height: 70rem;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
     background-color: $almond;
+    padding: 2rem 2rem;
 
     &__headers {
         margin-right: auto;
     }
 
     &__arrow {
-        width: 1rem;
+        width: 1.5rem;
     }
 
     &__title {
@@ -23,21 +21,48 @@
     &__heading {
         display: flex;
         flex-direction: row;
-        gap: 6rem;
+        align-items: center;
+        background-color: $white;
+        border-radius: 2rem;
+        padding: 0 2rem;
+        height: 4rem;
+        box-shadow: 2px 2px rgb(0 0 0 / 10%);
     }
 
     &__more {
+        font-size: 1.5rem;
+    }
+
+    &__dropdown {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
+    }
+
+    &__content {
+        display: flex;
+        gap : 1rem;
+        min-height: 2rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: $white;
+    }
+
+    &__empty{
+        min-height: 2rem;
     }
 
     &__date {
         font-size: 1.25rem;
     }
 
+    &__layout {
+        display: flex;
+        justify-content: center;
+    }
+
     &__img {
-        width: 40rem;
+        width: 45rem;
+        padding-top: 8rem;
     }
 }
 
