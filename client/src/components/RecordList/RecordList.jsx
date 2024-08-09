@@ -20,7 +20,7 @@ const RecordList = ({ recordListData }) => {
     return(
         <>
         <section className="recordList">
-            <h2 className="recordList__title">Record List</h2>
+            <h2 className="recordList__title">Medical Records</h2>
             <input className="recordList__search" type="text" placeholder="Search" onChange={handleSearch}/>
             <div className="recordList__table">
                 <div className="recordList__row">
