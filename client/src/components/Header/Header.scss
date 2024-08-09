@@ -1,8 +1,7 @@
 @use "../../styles/partials/variables" as *;
 
-
 .header {
-  width: 100%;
+//   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -12,12 +11,16 @@
   &__logo {
     margin: 0;
     font-size: 1.5rem;
+    color: #242424;
   }
   &__links {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-
+   
+    & a{
+        color: #242424;
+    }
   }
   &__link {
     &--tracker {
@@ -31,9 +34,14 @@
     border: none !important;
     width: 4.5rem;
     cursor: pointer;
+    color: #242424;
+    &:focus,
+    :focus-visible {
+      outline: none;
+    }
   }
   &__avatar {
-    width: 3rem;
+    width: 2rem;
     border-radius: 25px;
   }
   &__account {
@@ -43,7 +51,7 @@
     border: 1px solid $sand;
     border-radius: 50px;
     padding: 0.5rem 1rem;
-    width: 8rem;
+    width: 7rem;
   }
 }
 
