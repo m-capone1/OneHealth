@@ -3,7 +3,9 @@ import './RecordDetailsPage';
 export default function () {
     return (
         <section>
-            hi
+            <img>
+            
+            </img>
         </section>
     )
 }
