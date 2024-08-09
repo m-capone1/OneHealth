@@ -21,7 +21,7 @@ function App() {
           path="/records"
           element={<RecordList recordListData={recordData} />}
         />
-        <Route path="/record-details" element={<RecordDetailsPage />} />
+        <Route path="/record-details/:id" element={<RecordDetailsPage />} />
       </Routes>
     </Router>
   );
