@@ -24,6 +24,10 @@
     align-items: center;
   }
 
+  &__motto{
+    font-size: 3rem;
+  }
+
   &__items {
     z-index: 1;
     display: flex;

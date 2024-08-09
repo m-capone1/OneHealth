@@ -7,7 +7,7 @@ const Hero = () => {
       <div class="hero__overlay overlay"></div>
 
       <div className="hero__items">
-        <h2>Moto</h2>
+        <h2 className="hero__motto">Stay Informed, Stay Connected, Stay Healthy</h2>
         {/* <div className="hero__item">
           <h3>Sypmtoms Tracker</h3>
         </div>

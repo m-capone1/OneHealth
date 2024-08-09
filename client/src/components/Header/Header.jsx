@@ -1,11 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Header.scss";
 import { Link, useLocation } from "react-router-dom";
 import avatar from '../../assets/images/avatar.png'
 
-function Header({handleLogin,isloggedIn}) {
+function Header() {
 const location = useLocation();
+const [isloggedIn, setIsLoggedIn] = useState(false)
 
+const handleLogin = () => {
+  setIsLoggedIn(prev => !prev)
+}
 
   return (
     <header className="header">
