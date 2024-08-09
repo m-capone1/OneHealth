@@ -1,0 +1,156 @@
+@use "../../styles/partials/variables" as *;
+
+.tracker{
+    background-color: $white;
+    &__form{
+
+        &--titles{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+    &__symptom{
+        margin-left: 5%;
+    }
+    &__green{
+        background-color: rgb(19, 214, 19);
+        border-radius: 50%;
+        height: 1.5rem;
+        width: 1.5rem;
+        margin: 1rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & input {
+            position: absolute;
+            top: 3px;
+        }
+    }
+    &__yellow{
+        border: 1px solid yellow;
+        background-color: yellow;
+        border-radius: 50%;
+        height: 1.5rem;
+        width: 1.5rem;
+        margin: 1rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & input {
+            position: absolute;
+            top: 3px;
+        }
+    }
+    &__red{
+        border: 1px solid red;
+        background-color: red;
+        border-radius: 50%;
+        height: 1.5rem;
+        width: 1.5rem;
+        margin: 1rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & input {
+            position: absolute;
+            top: 3px;
+        }
+    }
+    &__input{
+        width: 90%;
+        height: 30vh;
+        border-radius: 10px;
+        background-color: #f2e0f2;
+        font-size: 1.5rem;
+        &--container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__button{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__record{
+        &--container{
+            background-color: #ead7eb;
+            border-radius: 5px;
+        }
+        &--title{
+            margin-top: 0;
+            margin-left: 4rem;
+        }
+        &--titles{
+            display: flex;
+            align-items: center;
+            padding-left: 64px;
+            border-bottom: 1px solid black;
+        }
+        &--condition{
+            margin-right: 100px;
+        }
+        &--notes{
+            width: 600px;
+        }
+    }
+}
+.record{
+    &__titles{
+        display: flex;
+        align-items: center;
+        padding-bottom: 2rem;
+        margin-left: 64px;
+    }
+    &__condition{
+        margin-right: 100px;
+    }
+    &__notes{
+        width: 600px;
+        margin-left: 16px;
+    }
+    &__time{
+        margin-right: 32px;
+    }
+    &__buttons{
+        margin-right: 16px;
+    }
+}
+
+.button {
+  background-color: #702573;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 1rem 5%;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #b63bba;
+}
