@@ -11,7 +11,7 @@ export default function RecordDetailsPage() {
     const [isCotnent, setIsContent] = useState(false);
 
     const openAIUrl = "http://localhost:8080/generate-content";
-    let prompt = "Explain to an average person what a cholesterol result of 145 means for someone's health."
+    let prompt = "Explain to an average person what a cholesterol result of 145 means for someone's health. Please only give a 3-4 sentence answer."
 
     useEffect(()=> {
         const fetchContent = async() => {
