@@ -10,13 +10,15 @@ const ChatBot = () => {
 
   const handleSendMessage = () => {
     if (currentMessage.trim()) {
-      setMessages([...messages, { sender: "patient", text: currentMessage }]);
+      setMessages([...messages, { sender: "patient", text: currentMessage, doctor:selectedDoctor }]);
       setCurrentMessage("");
     }
   };
 
   return (
     <div className="chatbot">
+      <div>
+
       <div className="chatbot__doctor-select">
         <label htmlFor="doctor" className="chatbot__label">
           To:{" "}
@@ -37,20 +39,10 @@ const ChatBot = () => {
           ))}
         </select>
       </div>
-
-      <div className="chatbot__screen">
-        {messages.map((message, index) => (
-          <div
-            key={index}
-            className={`chatbot__message chatbot__message--${message.sender}`}
-          >
-            {message.text}
-          </div>
-        ))}
-      </div>
-
       <div className="chatbot__input-area">
-        <input
+        <textarea
+        cols={50}
+        rows={20}
           type="text"
           className="chatbot__input"
           value={currentMessage}
@@ -61,6 +53,21 @@ const ChatBot = () => {
           Send
         </button>
       </div>
+      </div>
+      
+
+      <div className="chatbot__screen">
+        {messages.map((message, index) => (
+          <div
+            key={index}
+            className={`chatbot__message chatbot__message--${message.sender}`}
+          >
+            <span>{message.doctor}</span><span>{message.text}</span>
+            
+          </div>
+        ))}
+      </div>
+
     </div>
   );
 };
