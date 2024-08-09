@@ -14,7 +14,7 @@ const handleLogin = () => {
   return (
     <header className="header">
       <Link to="/">
-        <h1>OneHealth</h1>
+        <h1 className="header__logo">OneHealth</h1>
       </Link>
       <nav className="header__links">
         <Link to="/records"  className={location.pathname === '/' ? 'active' : ''}>Records</Link>
