@@ -1,5 +1,5 @@
-@use "/src/styles/partials/variables.scss" as *;
-@use "/src/styles/partials/typography.scss" as *;
+@use "./variables.scss" as *;
+@use "./typography.scss" as *;
 
 @include font-faces;
 
@@ -29,3 +29,4 @@
 
 
 }
+
