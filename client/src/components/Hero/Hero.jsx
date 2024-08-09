@@ -8,15 +8,6 @@ const Hero = () => {
 
       <div className="hero__items">
         <h2 className="hero__motto">Stay Informed, Stay Connected, Stay Healthy</h2>
-        {/* <div className="hero__item">
-          <h3>Sypmtoms Tracker</h3>
-        </div>
-        <div className="hero__item">
-          <h3>Medical Record</h3>
-        </div>
-        <div className="hero__item">
-          <h3>Chat with Doctor</h3>
-        </div> */}
       </div>
     </div>
   );
