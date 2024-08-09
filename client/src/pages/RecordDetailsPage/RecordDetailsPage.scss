@@ -1,0 +1,46 @@
+@use '../../styles/partials/variables' as *;
+
+.details {
+    display: flex;
+    height: 50rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $almond;
+
+    &__headers {
+        margin-right: auto;
+    }
+
+    &__arrow {
+        width: 1rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: row;
+        gap: 6rem;
+    }
+
+    &__more {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    &__date {
+        font-size: 1.25rem;
+    }
+
+    &__img {
+        width: 40rem;
+    }
+}
+
+h1, h3 {
+    margin: 0;
+}
