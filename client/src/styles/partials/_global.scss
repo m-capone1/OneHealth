@@ -1,0 +1,30 @@
+@use "/src/styles/partials/variables.scss" as *;
+@use "/src/styles/partials/typography.scss" as *;
+
+@include font-faces;
+
+// Global styles
+@mixin global-styles {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .labels, 
+    .buttons{
+    font-family: "Roboto";
+    font-size: 0.625rem;
+    line-height: 1.25rem;
+    }
+}
