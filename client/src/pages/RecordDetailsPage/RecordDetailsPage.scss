@@ -1,0 +1,136 @@
+@use '../../styles/partials/variables' as *;
+
+.details {
+    height: auto;
+    align-items: center;
+    background-color: $almond;
+    padding: 2rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+
+    &__headers {
+        margin-right: auto;
+    }
+
+    &__arrow {
+        width: 1.5rem;
+        margin-left: 0.75rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $finn;
+        margin: 0;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $white;
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+        height: 4rem;
+        box-shadow: 2px 2px rgb(0 0 0 / 10%);
+    }
+
+    &__more {
+        font-size: 1.5rem;
+        color: $umber;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    &__dropdown {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap : 1rem;
+        min-height: 3rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: $white;
+        margin: 0.25rem 0;
+        border-radius: 2rem;
+        padding: 0 1rem;
+    }
+
+    &__empty{
+        min-height: 3.5rem;
+    }
+
+    &__date {
+        font-size: 1.25rem;
+    }
+
+    &__layout {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__insights {
+        display: flex;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    &__ai-content {
+        background-color: $white;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 2px solid $umber;
+        box-shadow: 2px 2px rgba($umber, 0.5);
+    }
+
+    &__ai-img {
+        width: 1.25rem;
+        margin-left: 0.25rem;
+    }
+
+    &__ai-response {
+        font-size: 1.25rem;
+        padding: 1rem 1rem;
+    }
+
+    &__img {
+        width: 45rem;
+        padding: 2rem 0;
+    }
+
+    &__hr {
+        border: 1px solid rgb($finn, 0.5);
+        width: 100%;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 1rem;
+        border:none;
+        margin-top: 1rem;
+        align-self: flex-end;
+    }
+
+    &__button {
+        height: 3.5rem;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 3rem;
+        // font-family: 'Roboto-Regular', sans-serif;
+        background-color: $finn;
+        box-shadow: 2px 2px rgba($umber, 0.5);
+        color: $white;
+        padding: 0 1rem;
+        cursor: pointer;
+    }
+}
+
+h1, h3 {
+    margin: 0;
+}

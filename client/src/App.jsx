@@ -1,4 +1,5 @@
-import "./App.scss";
+import './App.scss';
+import RecordDetailsPage from './pages/RecordDetailsPage/RecordDetailsPage';
 import RecordList from "./components/RecordList/RecordList";
 import recordData from "./Data/data.json";
 import React from "react";
@@ -14,10 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/chat" element={<ChatPage />} />
-        <Route
-          path="/records"
-          element={<RecordList recordListData={recordData} />}
-        />
+        <Route path='/records' element={ <RecordList recordListData={recordData}/>} />
+        <Route path='/record-details' element={ <RecordDetailsPage  />} />
       </Routes>
     </Router>
   );
