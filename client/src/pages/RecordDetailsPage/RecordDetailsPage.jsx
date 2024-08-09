@@ -3,13 +3,15 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import bloodwork from '../../assets/images/bloodwork3.jpg';
 import arrow from '../../assets/icons/down-arrow.png';
+import stars from '../../assets/icons/stars.png';
 
 export default function RecordDetailsPage() {
     const [showDetails, setShowDetails] = useState(false);
     const [content, setContent]= useState({});
+    const [isCotnent, setIsContent] = useState(false);
 
     const openAIUrl = "http://localhost:8080/generate-content";
-    let prompt = "Explain what the different blood types are."
+    let prompt = "Explain to an average person what a cholesterol result of 145 means for someones health."
 
     useEffect(()=> {
         const fetchContent = async() => {
@@ -30,7 +32,7 @@ export default function RecordDetailsPage() {
     };
 
     const handleGenerate = () => {
-
+        setIsContent(!isCotnent);
     }
 
     return (
@@ -61,12 +63,32 @@ export default function RecordDetailsPage() {
                 )}
             </div>
             <div className='details__layout'>
+                {isCotnent ? (
+                        <div className='details__ai-content'>
+                            <div>
+                            <div className='details__insights'>
+                                Ai Insights
+                                <img src={stars} alt="ai-stars" className='details__ai-img'></img>
+                            </div>
+                            <div className='details__ai-response'>
+                                {content}
+                            </div>
+                            </div>
+                        </div>
+                    ) : (
+                        <div className='details__empty'></div>
+                    )}
                 <img 
                     src={bloodwork}
                     onClick={handleGenerate} 
                     className='details__img' 
                     alt="bloodwork"
                 />
+                <hr className='details__hr'></hr>
+                <div className='details__buttons'>
+                    <button className='details__button'>Discuss these Results</button>
+                    <button className='details__button'>Download Documents</button>
+                </div>
             </div>
         </section>
     );
