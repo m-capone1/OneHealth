@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import { Link } from 'react-router-dom';
 import Record from "../Record/Record"
 import './RecordList.scss'
 
@@ -31,8 +32,12 @@ const RecordList = ({ recordListData }) => {
                 <div className="recordList__content">
                     {
                         allRecords.map((record)=>(
-                            <Record record={record}
-                            />
+                            <Link
+                            key={record.id} 
+                            to={`/record-details/${record.id}`} >
+                                <Record record={record}
+                                />
+                            </Link>
                         ))
                     }
                 </div>    

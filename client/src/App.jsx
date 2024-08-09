@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/chat" element={<ChatPage />} />
         <Route path='/records' element={ <RecordList recordListData={recordData}/>} />
-        <Route path='/record-details' element={ <RecordDetailsPage  />} />
+        <Route path='/record-details/:id' element={ <RecordDetailsPage  />} />
       </Routes>
     </Router>
   );
