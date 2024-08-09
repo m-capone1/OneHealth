@@ -1,0 +1,91 @@
+// // ChatBot.scss
+
+// @use "/src/styles/partials/variables.scss" as *;
+// @use "/src/styles/partials/typography.scss" as *;
+
+// .chatbot {
+//   background-color: $sand;
+//   padding: 2rem;
+//   border-radius: 1rem;
+//   margin: 0 auto;
+//   font-family: "Roboto-Regular";
+  
+
+//   @media (max-width: 768px) {
+//     width: 100%; // Full width on tablets and smaller devices
+//     min-width: 100%; // Ensure the width takes up full space on smaller screens
+//     border-radius: 0.5rem;
+//   }
+
+//   &__doctor-select {
+//     margin-bottom: 2rem;
+//   }
+
+//   &__label {
+//     margin-right: 1rem;
+//     @include font-faces;
+//     font-family: "Roboto-Bold";
+//     font-size: 1.4rem;
+//     line-height: 2rem;
+//   }
+
+//   &__dropdown {
+//     padding: 1rem;
+//     border: 1px solid #ccc;
+//     border-radius: 0.5rem;
+//     font-size: 1.4rem;
+//   }
+
+//   &__screen {
+//     background-color: #fff;
+//     border: 1px solid #ccc;
+//     border-radius: 1rem;
+//     padding: 2rem;
+//     margin-bottom: 2rem;
+//     height: 30rem;
+//     overflow-y: auto;
+//   }
+
+//   &__message {
+//     margin-bottom: 1rem;
+
+//     &--patient {
+//       text-align: right;
+//       color: $finn;
+//     }
+
+//     &--doctor {
+//       text-align: left;
+//       color: #333;
+//     }
+//   }
+
+//   &__input-area {
+//     display: flex;
+//     align-items: center;
+
+//     &__input {
+//       flex-grow: 1;
+//       padding: 1rem;
+//       border: 1px solid #ccc;
+//       border-radius: 0.5rem;
+//       margin-right: 1rem;
+//       font-size: 1.4rem;
+//     }
+
+//     &__send-button {
+//       background-color: $finn;
+//       color: #fff;
+//       padding: 1rem 2rem;
+//       border: none;
+//       border-radius: 0.5rem;
+//       cursor: pointer;
+//       font-size: 1.4rem;
+//       transition: background-color 0.3s ease;
+
+//       &:hover {
+//         background-color: darken($finn, 10%);
+//       }
+//     }
+//   }
+// }
