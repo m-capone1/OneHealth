@@ -57,6 +57,9 @@
   }
 
   &__row{
-    flex: 1 1 45%
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    
   }
 }
