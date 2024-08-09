@@ -1,0 +1,60 @@
+@use "../../styles/partials/variables" as *;
+
+.header {
+//   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+
+  &__logo {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #242424;
+  }
+  &__links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+   
+    & a{
+        color: #242424;
+    }
+  }
+  &__link {
+    &--tracker {
+      border-left: 1px solid $finn;
+      border-right: 1px solid $finn;
+      padding: 0 1rem;
+    }
+  }
+  &__button {
+    background-color: transparent;
+    border: none !important;
+    width: 4.5rem;
+    cursor: pointer;
+    color: #242424;
+    &:focus,
+    :focus-visible {
+      outline: none;
+    }
+  }
+  &__avatar {
+    width: 2rem;
+    border-radius: 25px;
+  }
+  &__account {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid $sand;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    width: 7rem;
+  }
+}
+
+// .active{
+//     border-bottom: 3px solid $finn;
+// }
